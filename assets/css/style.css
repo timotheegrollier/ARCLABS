@@ -71,7 +71,7 @@ footer {
   justify-content: space-around;
 }
 
-.social-box {
+footer .social-box {
   background: rgb(46, 25, 66);
   width: 40px;
   height: 40px;
@@ -79,6 +79,8 @@ footer {
   justify-content: center;
   align-items: center;
 }
+
+/*********************************** FONT ************************************/
 
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i");
 
@@ -117,6 +119,8 @@ nav img {
 #burger {
   display: none;
   color: white;
+  font-size: 2rem;
+  cursor: pointer;
 }
 
 nav > ul {
@@ -212,4 +216,62 @@ h1 {
   text-transform: uppercase;
 }
 
+.social_icons {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+}
+
 /******************************* FOOTER **********************************/
+
+/******************************* @MEDIA **********************************/
+@media screen and (max-width: 768px) {
+  nav {
+    justify-content: space-between;
+    padding: 0 30px;
+    position: relative;
+  }
+
+  #burger {
+    display: block;
+  }
+
+  nav > ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    height: 300px;
+    top: 60px;
+    right: 0;
+    width: 150px;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .menu_hide {
+    transform: translateX(-200px);
+    background: rgba(255, 255, 255, 0.13);
+    width: 200px;
+  }
+
+  .social_icons {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #center {
+    align-items: center;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  .social_icons {
+    width: 100%;
+    justify-content: space-around;
+  }
+}
