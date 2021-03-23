@@ -150,6 +150,7 @@ h1 {
   justify-content: space-between;
 }
 
+<<<<<<< HEAD
 /* //////////////////////TESTIMONIAL//////////////////// */
 #test-title {
   margin-bottom: 40px;
@@ -211,6 +212,25 @@ h1 {
 .selected-point {
   background: goldenrod;
 }
+=======
+/******************************* SERVICES **********************************/
+#services {
+  display: flex;
+  justify-content: space-between;
+  height: 400px;
+}
+.service {
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service img {
+  width: 60%;
+}
+
+>>>>>>> dev-2
 /* //////////////BANDEAU SPONSO//////////////////// */
 
 #bandeau-sponso {
