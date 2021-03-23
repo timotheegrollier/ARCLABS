@@ -4,53 +4,14 @@
   list-style: none;
 }
 
-main {
-  height: 30vh;
-}
-
-footer {
-  background: rgb(13, 13, 58);
-  height: 70vh;
-  display: flex;
-  align-items: center;
-  width: 100vw;
-  justify-content: center;
-}
-
-#footer {
-  height: 60%;
-  width: 90%;
-  display: flex;
-  justify-content: space-around;
-}
-
-#footer ul {
-  color: darkgray;
-  line-height: 30px;
-}
-
-.list-title {
-  color: white;
-  margin-bottom: 40px;
-}
-
-#newsletter {
-  color: darkgray;
-}
-.email-input {
-  margin-top: 20px;
-  background: rgb(46, 25, 66);
-  padding: 8px;
-}
-.email-sub {
-  padding: 9px;
-  margin-left: -5px;
-}
-
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i");
 
 body {
   font-family: "roboto", sans-serif;
+}
+
+main {
+  height: 30vh;
 }
 
 /************************************ HEADER *********************************/
@@ -63,8 +24,8 @@ header {
   height: 100%;
   background: linear-gradient(
     0deg,
-    rgba(46, 72, 82, 0.6) 0%,
-    rgba(46, 72, 82, 0.3) 100%
+    rgba(32, 50, 73, 0.8) 0%,
+    rgba(32, 50, 73, 0.7) 100%
   );
 }
 
@@ -121,7 +82,7 @@ nav a {
   padding-bottom: 10px;
   width: 100px;
   height: 250px;
-  background: rgb(81, 127, 165);
+  /* background: rgb(49, 101, 145); */
   border-radius: 0 0 10px 10px;
 }
 
@@ -140,4 +101,81 @@ nav .corner {
   display: inline-block;
   padding: 3px;
   transform: rotate(-45deg);
+}
+
+/******************************* LANDING PAGE *****************************/
+#landing_page {
+  color: white;
+  margin: 0 4vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80%;
+}
+
+#center {
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h1 {
+  font-size: 5rem;
+  line-height: 5rem;
+}
+
+#landing_page a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  height: 40px;
+  width: 150px;
+  border: 2px solid rgba(255, 255, 255, 0.384);
+}
+
+#landing_page p {
+  text-transform: uppercase;
+}
+
+/******************************* FOOTER **********************************/
+footer {
+  background: rgb(13, 13, 58);
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  justify-content: center;
+}
+
+#footer {
+  height: 60%;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#footer ul {
+  color: darkgray;
+  line-height: 30px;
+}
+
+.list-title {
+  color: white;
+  margin-bottom: 40px;
+}
+
+#newsletter {
+  color: darkgray;
+}
+.email-input {
+  margin-top: 20px;
+  background: rgb(46, 25, 66);
+  padding: 8px;
+}
+.email-sub {
+  padding: 9px;
+  margin-left: -5px;
 }
