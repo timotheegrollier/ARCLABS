@@ -12,9 +12,13 @@ footer {
   background: rgb(13, 13, 58);
   height: 70vh;
   display: flex;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
   align-items: center;
   width: 100vw;
   justify-content: center;
+  flex-direction: column;
+  position: relative;
 }
 
 #footer {
@@ -45,6 +49,34 @@ footer {
 .email-sub {
   padding: 9px;
   margin-left: -5px;
+}
+
+#footer-foot {
+  color: white;
+  width: 80%;
+}
+#footer-foot span {
+  color: goldenrod;
+}
+
+#social-links {
+  display: flex;
+  width: 15%;
+  justify-content: space-between;
+  color: white;
+  position: absolute;
+  bottom: 65px;
+  right: 40px;
+  justify-content: space-around;
+}
+
+.social-box {
+  background: rgb(46, 25, 66);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i");
