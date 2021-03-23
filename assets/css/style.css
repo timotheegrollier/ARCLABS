@@ -150,6 +150,84 @@ h1 {
   justify-content: space-between;
 }
 
+/* //////////////////////TESTIMONIAL//////////////////// */
+#test-title {
+  margin-bottom: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.4rem;
+}
+#test-title h4 {
+  color: goldenrod;
+}
+
+#testimonial {
+  display: flex;
+  justify-content: center;
+  height: 80vh;
+  background: lightgrey;
+  flex-direction: column;
+  align-items: center;
+}
+#img-people1 {
+  background: url(/assets/img/t1.png) center/cover;
+  height: 100px;
+  width: 100%;
+}
+
+.test-people {
+  height: 50%;
+  width: 40%;
+  background: white;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 1fr 1fr 1fr;
+  align-items: center;
+}
+
+#people-cards {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#slider-point {
+  display: flex;
+  justify-content: space-between;
+  width: 10%;
+  margin: 0px 0;
+}
+
+.point {
+  height: 10px;
+  width: 30px;
+  background: gray;
+}
+
+.selected-point {
+  background: goldenrod;
+}
+/******************************* SERVICES **********************************/
+#services {
+  display: flex;
+  justify-content: space-between;
+  height: 400px;
+}
+.service {
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service img {
+  width: 60%;
+}
+
 /* //////////////BANDEAU SPONSO//////////////////// */
 
 #bandeau-sponso {
