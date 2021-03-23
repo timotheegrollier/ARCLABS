@@ -1,3 +1,5 @@
+/* FOOTER */
+
 * {
   margin: 0;
   padding: 0;
@@ -51,23 +53,22 @@ footer {
   margin-left: -5px;
 }
 
-#footer-foot {
+#footer-right {
   color: white;
   width: 80%;
 }
-#footer-foot span {
+#footer-right span {
   color: goldenrod;
 }
 
 #social-links {
   display: flex;
-  width: 15%;
-  justify-content: space-between;
+  width: 200px;
   color: white;
   position: absolute;
   bottom: 65px;
-  right: 40px;
-  justify-content: space-around;
+  right: 60px;
+  justify-content: space-between;
 }
 
 .social-box {
@@ -77,6 +78,10 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#social-links-mobile {
+  display: none;
 }
 
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i");
@@ -172,4 +177,33 @@ nav .corner {
   display: inline-block;
   padding: 3px;
   transform: rotate(-45deg);
+}
+
+/* Media queries */
+@media screen and (max-width: 900px) {
+  footer {
+    height: 150vh;
+  }
+  #footer {
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+  #social-links {
+    display: none;
+  }
+  #social-links-mobile {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    color: white;
+  }
+  #footer-foot {
+    margin-top: 30px;
+    margin-left: 40px;
+    width: 100%;
+  }
+  .list-title {
+    margin-bottom: 10px;
+  }
 }
