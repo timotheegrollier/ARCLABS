@@ -43,5 +43,13 @@ $(function () {
     $("nav > ul").slideToggle(400, function () {
       $(this).css("display", "flex");
     });
+    $("#burger").hide();
+    $("#cross").show();
+  });
+
+  $("#cross").click(function () {
+    $("nav > ul").slideToggle(400);
+    $("#burger").show();
+    $("#cross").hide();
   });
 });

@@ -51,6 +51,18 @@ nav img {
   cursor: pointer;
 }
 
+#cross {
+  font-size: 5rem;
+  /* line-height: 65px; */
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  display: none;
+}
+
 nav > ul {
   width: 70%;
   display: flex;
@@ -361,6 +373,19 @@ footer .social-box {
   #img-mob {
     display: block;
     opacity: 0.2;
+  }
+}
+
+/* BURGER */
+@media screen and (min-width: 768px) {
+  #cross {
+    display: none;
+  }
+  #burger {
+    display: none;
+  }
+  nav ul {
+    display: flex;
   }
 }
 
