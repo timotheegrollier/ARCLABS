@@ -1,4 +1,48 @@
 * {
   margin: 0;
   padding: 0;
+  list-style: none;
+}
+
+main {
+  height: 30vh;
+}
+
+footer {
+  background: rgb(13, 13, 58);
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  justify-content: center;
+}
+
+#footer {
+  height: 60%;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#footer ul {
+  color: darkgray;
+  line-height: 30px;
+}
+
+.list-title {
+  color: white;
+  margin-bottom: 40px;
+}
+
+#newsletter {
+  color: darkgray;
+}
+.email-input {
+  margin-top: 20px;
+  background: rgb(85, 23, 143);
+  padding: 8px;
+}
+.email-sub {
+  padding: 9px;
+  margin-left: -5px;
 }
