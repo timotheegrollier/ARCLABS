@@ -434,9 +434,7 @@ footer .social-box {
     width: 100%;
     justify-content: space-evenly;
   }
-
-  /********************* services ******************/
-  
+}
 
 @media screen and (max-width: 576px) {
   #center {
@@ -454,11 +452,11 @@ footer .social-box {
     justify-content: space-around;
   }
 
-  .service{
+  .service {
     width: 100%;
   }
 
-  #services p{
+  #services p {
     width: 80%;
   }
 }
