@@ -52,6 +52,7 @@ nav img {
 }
 
 #cross {
+  display: none;
   font-size: 5rem;
   /* line-height: 65px; */
   font-weight: bold;
@@ -60,7 +61,6 @@ nav img {
   position: absolute;
   top: 20px;
   right: 30px;
-  display: none;
 }
 
 nav > ul {
@@ -79,6 +79,10 @@ nav a {
   text-transform: uppercase;
   color: white;
   /* font-size: 1.1rem; */
+}
+
+nav button {
+  outline: none;
 }
 
 #home {
@@ -185,7 +189,7 @@ h1 {
   align-items: center;
 }
 #img-people1 {
-  background: url(/assets/img/t1.png) center/cover;
+  background: url(../img/t1.png) center/cover;
   height: 100px;
   width: 100%;
 }
@@ -385,6 +389,10 @@ footer .social-box {
 
   #burger {
     display: block;
+  }
+
+  #cross {
+    display: none;
   }
 
   nav > ul {

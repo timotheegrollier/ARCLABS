@@ -9,12 +9,10 @@ $(function () {
       if (state) {
         $("#corner_1").css({
           transform: "rotate(45deg)",
-          transition: "0.4s ease-in",
         });
       } else {
         $("#corner_1").css({
           transform: "rotate(-45deg)",
-          transition: "0.4s ease-in",
         });
       }
     });
@@ -28,12 +26,10 @@ $(function () {
       if (state) {
         $("#corner_2").css({
           transform: "rotate(45deg)",
-          transition: "0.4s ease-in",
         });
       } else {
         $("#corner_2").css({
           transform: "rotate(-45deg)",
-          transition: "0.4s ease-in",
         });
       }
     });
@@ -42,9 +38,9 @@ $(function () {
   $("#burger").click(function () {
     $("nav > ul").slideToggle(400, function () {
       $(this).css("display", "flex");
+      $("#burger").hide();
+      $("#cross").show();
     });
-    $("#burger").hide();
-    $("#cross").show();
   });
 
   $("#cross").click(function () {
