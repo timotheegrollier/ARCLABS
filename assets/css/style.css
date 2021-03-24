@@ -108,6 +108,7 @@ nav button {
 
 nav button {
   font-family: inherit;
+  text-transform: uppercase;
   font-size: 1rem;
   background: none;
   border: none;
@@ -230,18 +231,35 @@ h1 {
 /******************************* SERVICES **********************************/
 #services {
   display: flex;
-  justify-content: space-between;
-  height: 400px;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  margin: 5vh 0;
 }
+
 .service {
-  width: 20vw;
+  width: 15vw;
+  height: 350px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 0.8rem;
+  min-width: 200px;
+}
+
+.box-icon {
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
 .service img {
-  width: 60%;
+  height: 60%;
 }
 
 /* //////////////BANDEAU SPONSO//////////////////// */
@@ -416,7 +434,9 @@ footer .social-box {
     width: 100%;
     justify-content: space-evenly;
   }
-}
+
+  /********************* services ******************/
+  
 
 @media screen and (max-width: 576px) {
   #center {
@@ -432,5 +452,13 @@ footer .social-box {
   .social_icons {
     width: 100%;
     justify-content: space-around;
+  }
+
+  .service{
+    width: 100%;
+  }
+
+  #services p{
+    width: 80%;
   }
 }
