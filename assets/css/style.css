@@ -193,6 +193,13 @@ h1 {
   background: url(../img/t1.png) center/cover;
   height: 100px;
   width: 100%;
+  grid-area: i;
+}
+#img-people2 {
+  background: url(../img/t2.png) center/cover;
+  height: 100px;
+  width: 100%;
+  grid-area: i;
 }
 
 .test-people {
@@ -203,6 +210,19 @@ h1 {
   grid-template-columns: 20% 80%;
   grid-template-rows: 1fr 1fr 1fr;
   align-items: center;
+  grid-template-areas:
+    "i t "
+    "i n "
+    ". m ";
+}
+.t {
+  grid-area: t;
+}
+.n {
+  grid-area: n;
+}
+.m {
+  grid-area: m;
 }
 
 #people-cards {
@@ -215,7 +235,7 @@ h1 {
 #slider-point {
   display: flex;
   justify-content: space-between;
-  width: 10%;
+  width: 20%;
   margin: 0px 0;
 }
 
@@ -396,6 +416,9 @@ footer .social-box {
     display: block;
     opacity: 0.2;
   }
+  #slider-point {
+    width: 30%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -434,6 +457,12 @@ footer .social-box {
     width: 100%;
     justify-content: space-evenly;
   }
+  .hide {
+    display: none;
+  }
+  .test-people {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -458,5 +487,8 @@ footer .social-box {
 
   #services p {
     width: 80%;
+  }
+  #slider-point {
+    width: 50%;
   }
 }
